@@ -1,11 +1,7 @@
 package tp.servlet;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -48,7 +44,7 @@ public class LoginServlet extends GenericTpServlet{
 				}
 			}
 			response.addCookie(new Cookie("dateConnec",ub.getLoginDate().toString()));
-			response.sendRedirect("./home.jsp");
+			response.sendRedirect("./private/home.jsp");
 			//response.getOutputStream().println("Utilisateur "+((UserBean)s.getAttribute("USER")).getLogin()+" connecté le "+((UserBean)s.getAttribute("USER")).getLoginDate().toString());
 		}
 		else{

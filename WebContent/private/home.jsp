@@ -14,7 +14,7 @@
 <body>
 <header>
 	
-	<form method="GET" action="./private/logout" >
+	<form method="post" action="./logout" >
 	  		Logout<input type="submit" value="logout"/>
 	</form>
 	<% user.getLogin();
