@@ -4,5 +4,8 @@
 <html>
 <header>
 	<h1>header</h1>
+	<form method="GET" action="./private/logout" >
+	  		Logout<input type="submit" value="logout"/>
+	</form>
 </header>
 </html>
