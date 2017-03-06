@@ -3,6 +3,7 @@
 <%@page import="libs.Book" %>
 <%@page import="libs.Library" %>
 <%@ taglib prefix="ex" uri="/WEB-INF/date.tld"%>
+<%@ taglib tagdir="/WEB-INF/tags/" prefix="l" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -32,6 +33,6 @@
 %>
 <ex:date date="${d}" format="dd/MM/YYYY"/><br>
 <ex:upper lower="du texte à la con"/><br>
-<%-- <%@ taglib tagdir="/WEB-INF/tags/" prefix="l" low="du texte" %> --%>
+<l:lower low="du texte"/>
 </body>
 </html>
