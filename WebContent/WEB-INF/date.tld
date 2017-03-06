@@ -1,0 +1,34 @@
+
+<taglib>
+
+	<tlib-version>1.1</tlib-version>
+	<jsp-version>2.3</jsp-version>
+	<short-name>TLD pour date</short-name>
+	<tag>
+		<name>date</name>
+		<tag-class>tags.DateTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>date</name>
+			<required>true</required>
+			<type>java.util.Date</type>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>format</name>
+			<required>true</required>
+			<type>java.util.String</type>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>upper</name>
+		<tag-class>tags.UpperTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>lower</name>
+			<required>true</required>
+			<type>java.util.String</type>
+		</attribute>
+	</tag>
+</taglib>
